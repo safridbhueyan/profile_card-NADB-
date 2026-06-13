@@ -40,14 +40,17 @@ Widget buildSkillTile(String title, String rating, double progress) {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
-              title,
-              style: const TextStyle(
-                fontSize: 14.5,
-                fontWeight: FontWeight.w600,
-                color: Colors.white,
+            Expanded(
+              child: Text(
+                title,
+                style: const TextStyle(
+                  fontSize: 14.5,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white,
+                ),
               ),
             ),
+            const SizedBox(width: 8),
             Text(
               rating,
               style: const TextStyle(
